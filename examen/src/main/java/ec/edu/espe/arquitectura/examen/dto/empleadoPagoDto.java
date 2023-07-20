@@ -1,12 +1,12 @@
-package ec.edu.espe.arquitectura.examen.model;
+package ec.edu.espe.arquitectura.examen.dto;
 
 import java.math.BigDecimal;
 
-public class empleadosPago {
+public class empleadoPagoDto {
+
     private String numeroCuenta;
     private BigDecimal valor;
-    private String estado;
-    public empleadosPago() {
+    public empleadoPagoDto() {
     }
     public String getNumeroCuenta() {
         return numeroCuenta;
@@ -20,17 +20,11 @@ public class empleadosPago {
     public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
-    public String getEstado() {
-        return estado;
-    }
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-    public empleadosPago(String numeroCuenta, BigDecimal valor, String estado) {
+    public empleadoPagoDto(String numeroCuenta, BigDecimal valor) {
         this.numeroCuenta = numeroCuenta;
         this.valor = valor;
-        this.estado = estado;
     }
+    
     
     
 }

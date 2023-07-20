@@ -1,23 +1,16 @@
-package ec.edu.espe.arquitectura.examen.model;
+package ec.edu.espe.arquitectura.examen.dto;
 
-import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+public class pagoRolDto {
 
-@Document(collection = "pagoRol")
-public class pagoRol {
-    @Id
     private String mes;
     private Date fechaProceso;
     private String rucEmpresa;
     private String cuentaPrincipal;
-    private BigDecimal valorTotal;
-    private BigDecimal valorReal;
-    private List<empleadosPago> empleadosPago;
-    public pagoRol() {
+    private List<empleadoPagoDto> empleadosPago;
+    public pagoRolDto() {
     }
     public String getMes() {
         return mes;
@@ -43,35 +36,21 @@ public class pagoRol {
     public void setCuentaPrincipal(String cuentaPrincipal) {
         this.cuentaPrincipal = cuentaPrincipal;
     }
-    public BigDecimal getValorTotal() {
-        return valorTotal;
-    }
-    public void setValorTotal(BigDecimal valorTotal) {
-        this.valorTotal = valorTotal;
-    }
-    public BigDecimal getValorReal() {
-        return valorReal;
-    }
-    public void setValorReal(BigDecimal valorReal) {
-        this.valorReal = valorReal;
-    }
-    public List<empleadosPago> getEmpleadosPago() {
+    public List<empleadoPagoDto> getEmpleadosPago() {
         return empleadosPago;
     }
-    public void setEmpleadosPago(List<empleadosPago> empleadosPago) {
+    public void setEmpleadosPago(List<empleadoPagoDto> empleadosPago) {
         this.empleadosPago = empleadosPago;
     }
-    public pagoRol(String mes, Date fechaProceso, String rucEmpresa, String cuentaPrincipal, BigDecimal valorTotal,
-            BigDecimal valorReal, List<empleadosPago> empleadosPago) {
+    public pagoRolDto(String mes, Date fechaProceso, String rucEmpresa, String cuentaPrincipal,
+            List<empleadoPagoDto> empleadosPago) {
         this.mes = mes;
         this.fechaProceso = fechaProceso;
         this.rucEmpresa = rucEmpresa;
         this.cuentaPrincipal = cuentaPrincipal;
-        this.valorTotal = valorTotal;
-        this.valorReal = valorReal;
         this.empleadosPago = empleadosPago;
     }
-    
+
     
     
 }

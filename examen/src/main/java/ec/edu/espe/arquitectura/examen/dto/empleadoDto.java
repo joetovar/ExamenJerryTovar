@@ -1,13 +1,12 @@
-package ec.edu.espe.arquitectura.examen.model;
+package ec.edu.espe.arquitectura.examen.dto;
 
-public class empleados {
+public class empleadoDto {
     private String cedulaIdentidad;
     private String apellidos;
     private String nombres;
     private String numeroCuenta;
-    public empleados() {
+    public empleadoDto() {
     }
-   
     public String getCedulaIdentidad() {
         return cedulaIdentidad;
     }
@@ -32,11 +31,13 @@ public class empleados {
     public void setNumeroCuenta(String numeroCuenta) {
         this.numeroCuenta = numeroCuenta;
     }
-    
-     public empleados(String cedulaIdentidad, String apellidos, String nombres, String numeroCuenta) {
+    public empleadoDto(String cedulaIdentidad, String apellidos, String nombres, String numeroCuenta) {
         this.cedulaIdentidad = cedulaIdentidad;
         this.apellidos = apellidos;
         this.nombres = nombres;
         this.numeroCuenta = numeroCuenta;
     }
+
+    
+    
 }
