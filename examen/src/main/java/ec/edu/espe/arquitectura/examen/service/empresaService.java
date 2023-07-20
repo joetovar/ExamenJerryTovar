@@ -5,15 +5,15 @@ import org.springframework.stereotype.Service;
 
 import ec.edu.espe.arquitectura.examen.dto.empresaDto;
 import ec.edu.espe.arquitectura.examen.model.empresa;
-import ec.edu.espe.arquitectura.examen.repository.empresaRepository;
+import ec.edu.espe.arquitectura.examen.repository.EmpresaRepository;
 
 @Service
 public class empresaService {
     @Autowired
-    empresaRepository empresaRepository;
+    EmpresaRepository empresaRepository;
 
     
-    public empresaService(empresaRepository empresaRepository) {
+    public empresaService(EmpresaRepository empresaRepository) {
         this.empresaRepository = empresaRepository;
     }
 
