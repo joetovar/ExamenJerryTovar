@@ -1,0 +1,58 @@
+Literal 1.	Implementar un servicio que permita crear la información de una empresa con todos sus empleados.
+{
+  "RUC": "1415161819001",
+  "razonSocial": "Kushki S.A.",
+  "cuentaPrincipal": "1112131415",
+  "empleados": [
+    {
+      "cedulaIdentidad": "1718327347",
+      "apellidos": "Tovar",
+      "nombres": "Jerry",
+      "numeroCuenta": "1112131415"
+    },
+    {
+      "cedulaIdentidad": "1711400729",
+      "apellidos": "Rojas",
+      "nombres": "Joe",
+      "numeroCuenta": "1112131415"
+    }
+  ]
+}
+
+Literal 2.	Implementar un servicio que reciba el Rol de Pagos de empresa por Mes
+Metodo Post
+{
+  "mes": "Junio",
+  "fechaProceso": "2023-06-02",
+  "rucEmpresa": "1900319011001",
+  "cuentaPrincipal": "1112131415",
+  "empleadosPago": [
+    {
+      "numeroCuenta": "1112131415",
+      "valor": 1200.40
+    },
+    {
+      "numeroCuenta": "1112131415",
+      "valor": 2500.80
+    }
+  ]
+}
+{
+  "mes": "Julio",
+  "fechaProceso": "2023-07-19",
+  "rucEmpresa": "1415161819001",
+  "cuentaPrincipal": "1112131415",
+  "empleadosPago": [
+    {
+      "numeroCuenta": "1112131415",
+      "valor": 1200.40
+    },
+    {
+      "numeroCuenta": "1112131415",
+      "valor": 2500.80
+    }
+  ]
+}
+
+
+
